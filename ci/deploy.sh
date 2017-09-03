@@ -3,6 +3,7 @@ set -ex
 
 SITE=quality-controller-tracy-76253.netlify.com
 
+export API_URL=https://amnesty-api.herokuapp.com
 yarn build
 zip -r website.zip dist
 curl -H "Content-Type: application/zip" \

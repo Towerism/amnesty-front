@@ -27,3 +27,6 @@ yarn test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Deployment N.B.
+For deployment it is important to set the api url via the environment variable `API_URL`.

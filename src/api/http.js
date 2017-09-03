@@ -1,5 +1,6 @@
 import axios from 'axios'
+import url from './url'
 
-const http = axios.create({ baseURL: 'http://localhost:3000' })
+const http = axios.create({ baseURL: url })
 
 export default http
