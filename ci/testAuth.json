@@ -1,0 +1,8 @@
+{
+  "secretOrKey": "<Your Secret Key For Signing JWT Here>",
+  "claims": {
+    "issuer": "localhost",
+    "audience": "localhost",
+    "expiresIn": "365d"
+  }
+}

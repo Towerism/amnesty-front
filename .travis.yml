@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- '8'
+env:
+  matrix:
+  - TEST=unit
+  - TEST=integration
+branches:
+  only:
+    - develop
+    - master
+cache:
+  yarn: true
+  directories:
+    - backend
+install: ci/install.sh
+script: ci/script.sh
+addons:
+  browserstack:
+    force_local: true
+    only: localhost,8080,0
+    username:
+      secure: G8j0Z4nY2B5ORrF87KPb9ga0oXBQBawPUy3vcE73YYT9OF9hb+f9rf4NtGvkSYqtRsopTM8lM3+X1nVTxe6pi/vIYfd012FciLgremIl2RsVndlXb1i6/LN4gCFS0F2OVAIY6YyM8D5R+mdKZeK6f4hG2iM2p3iEzP4NRqP7OEcWSMWcxFL3MFs4ePVtp+9e/u4ZgPj+LzASbPVBwoK8RdzfFhm6Hi2u7YvWH98TL50LZnnq6g/laxSJhW0rVi9lAhx5ii53z7MD0CkvPIAI1M2vGaWPD+39dO87ZdcAaghLCNz7UfqfM4BFHX5O5yQlCyhd1oa2bqpREZt2Dj1v4F87BDow0Z3VFbfBD7iZDQ6hGcun31pnfp7nZbsWdkEKMU146wrOc3gBD+VpjqyQ5GdV2DHTzg1cMM6GKasuliKpCEKoFakia4gMAdKT3vkoU3lygNPAORvJ5EkC0XbogndCL0HJAE0js+0GA6Qo9LDJbL4WxngGemnYjMSyMzLY9kpwZ8U11S3iSKVdlAYZsoj3x643dvvupIBvSDqBsmu3/wUYGOZ7+6XSb5LBIH2rPd8UXenLC0TJHD20deG/P/8WyG3P0DzaqPdqgYZ9G3aG//1UahvI4xPw+yNJG6zYVd2JL+hSpDtqyTDDHYyDD55Vww2+1FFNeRMbfUokAWk=
+    access_key:
+      secure: ECuUWSZDpuVr6JH/9RvR8gzGN/vqg5I7EopygfM3LL/HBHvENtAA9PIgNyG6dqocn1zSRYq/UtowL9e/2MGEmselCV95E5SO4Iqd8KoRWkdLjvoKH0FvnbCwKBMc4daTaGs/IkPwQWdDPjfdSveGg1IXrIy7ZyaRZKM5lP7Pptq91koRQa2G4+SfVH/tUbCb1pM8GemnNRFtDSzYws7prr2+C3CVpp3ROlul3vrvrACVkJwGrnmnn/Cvw08OKr/pAQS06PKfV1YLI2CyS7xoydIGSqMoLEdsIBQ2K6Dhg3Aj8zx+ms8S7yNqhwqrrLQ4GPE14152hJRm8vDMpOf3kAorOjK0A9QSVNxSnSzq0b7iDR4C+5545S8km48DxPGkQSEuWW3uhXL91/k+rzSjxE7k8I0A9TsCguV0OT8C86bhfZRykUiFWJRZ5luREeG0O5LewGo7wc5/XbL43q/HrY9jOS+FZoxKtCQVJpVyZJbz/9n5JmDHDzU1SsMqSGakeJu4YfPEip+T4P/5EyXbhKpENgdRsWiGt6WLjsQKXnw3xx89xmhGNTFwxBXQRuuxow8SJLIgMbTH16TOw60sHu17r9ZeEPZ4BKN1ia2qksDfYCyfJHe4OaJOSmMmuLPJtZlUJCZCsMSkd6e811oquu+V4sgXj37UKQ2IPJXsdIQ=
