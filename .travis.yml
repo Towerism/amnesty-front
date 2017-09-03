@@ -5,6 +5,8 @@ env:
   matrix:
   - TEST=unit
   - TEST=integration
+  global:
+    secure: LSNBZiKKx4OCsM6odwC3E28QFvTBPwwHgug9NaWRsoYxcWD6lYPz3NyeIlCcPlA2oc4U06RZf0LBMBYFjF0TuOPaiEYlO+Qv+mff+ePCNwxeYWwWDxVxcafCiSAl+8rii+ImCmSR5JglSg7WZLtPQ5xS6KlJcEigtxs805cg3TNKO/VpJXp74b1LmPIpviqRWsN6r+mFykypKwiGGwdWj5kvsbczSB1Qc9hEiOpIiq3X8mgsmDWirObOZkwQ/Drhv2u4kG1C+BtCTedAC2m/nmULFI3+4+wLMZqjpWvf8B6QzZD2QOw2y3n/vwF715FuGPltapB5BPtHGwIs+kZh5zFCjr7M3V2C7Lc9zMwk08EqUFvw1a6yzBvP1RqInaHgMB6PX+w+1jLd9A1+c5jwlJt/+ZlR5iRN9C14DPeLQErIbloY0GRkbUqsHIVn340107h+GboyWiOJsy6rZZ8IjinySlYeh7MbzURkohfosfjxIhE7aH++tthVEydZjrOIIv7dOed/VXoUBPQno1g4ietO+FImMYbnupO0lsC0cRXKSlyBYb845x9SUhMJ/7OHhzbKzpZdhjBlN2m1B808VVjLBq1vLpAenBRgMP8EghbyEPkWnS7371JiFQwLYUzm9JIGNrG6rLqQF13ivceUKmv6nHcqUJMEBI9nmKxXzQE=
 branches:
   only:
   - develop
@@ -15,6 +17,12 @@ cache:
   - backend
 install: ci/install.sh
 script: ci/script.sh
+deploy:
+  provider: script
+  script: ci/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
 addons:
   browserstack:
     force_local: true
