@@ -64,8 +64,6 @@ if (process.env.REMOTE_E2E) {
     selenium_host: 'localhost'
   })
 }
-console.log(JSON.stringify(selenium, null, 2))
-console.log(JSON.stringify(testSettings, null, 2))
 
 // http://nightwatchjs.org/gettingstarted#settings-file
 module.exports = {
