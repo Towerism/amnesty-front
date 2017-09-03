@@ -1,4 +1,4 @@
-# Amnesty Front End [![Build Status](https://travis-ci.com/Towerism/amnesty-front.svg?branch=master)](https://travis-ci.com/Towerism/amnesty-front)
+# Amnesty Front End [![Build Status](https://travis-ci.org/Towerism/amnesty-front.svg?branch=master)](https://travis-ci.org/Towerism/amnesty-front)
 > The front end for the Amnesty International blog
 
 ## Build Setup
