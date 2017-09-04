@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-SITE=quality-controller-tracy-76253.netlify.com
+SITE=amnesty-tamu.netlify.com
 
 yarn build
 zip -r website.zip dist
