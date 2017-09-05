@@ -34,7 +34,7 @@ export default {
     }
     var decodedToken = jwtDecode(getToken())
     return {
-      id: decodedToken.sub,
+      id: parseInt(decodedToken.sub),
       email: decodedToken.email,
       fullname: decodedToken.fullname
     }

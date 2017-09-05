@@ -4,7 +4,7 @@
     b-table(striped hover :items="users" :fields="fields")
       template(slot="delete" scope="data")
         b-button(size="sm" variant="danger" @click="deleteUser(data.item.id)" v-if="isNotCurrentUser(data.item.id)") Delete
-    b-modal(id="new-user" ref="newUserModal" title="New User" @shown="clearNewUser" hide-footer="true")
+    b-modal(id="new-user" ref="newUserModal" title="New User" @shown="clearNewUser" :hide-footer="true")
       b-form(@submit.stop.prevent="submitNewUser")
         b-form-group(label="Email" label-for="email")
           b-form-input#email(type="email" required placeholder="Enter email" v-model="newUser.email")
