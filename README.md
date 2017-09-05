@@ -1,4 +1,4 @@
-# Amnesty Front End [![Build Status](https://travis-ci.org/Towerism/amnesty-front.svg?branch=master)](https://travis-ci.org/Towerism/amnesty-front) [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=Ep1RkNCa1NMT2tuY1RSdTlWSG0xSFlidUo0ZDJ2dlFzcytReElZVlNqWT0tLXFRcGQ2M0FDL05Icy9Ccng2eWJtUUE9PQ==--0539a5509ac4ac7dc64c5facf12d4519c8b57ae2)](https://www.browserstack.com/automate/public-build/Ep1RkNCa1NMT2tuY1RSdTlWSG0xSFlidUo0ZDJ2dlFzcytReElZVlNqWT0tLXFRcGQ2M0FDL05Icy9Ccng2eWJtUUE9PQ==--0539a5509ac4ac7dc64c5facf12d4519c8b57ae2)
+# Amnesty Front End [![Build Status](https://travis-ci.org/Towerism/amnesty-front.svg?branch=master)](https://travis-ci.org/Towerism/amnesty-front) [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=ZEp1RkNCa1NMT2tuY1RSdTlWSG0xSFlidUo0ZDJ2dlFzcytReElZVlNqWT0tLXFRcGQ2M0FDL05Icy9Ccng2eWJtUUE9PQ==--0539a5509ac4ac7dc64c5facf12d4519c8b57ae2)](https://www.browserstack.com/automate/public-build/ZEp1RkNCa1NMT2tuY1RSdTlWSG0xSFlidUo0ZDJ2dlFzcytReElZVlNqWT0tLXFRcGQ2M0FDL05Icy9Ccng2eWJtUUE9PQ==--0539a5509ac4ac7dc64c5facf12d4519c8b57ae2)
 
 > The front end for the Amnesty International blog
 
