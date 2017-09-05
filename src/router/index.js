@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Users from '@/components/Users'
+import ChangePassword from '@/components/ChangePassword'
 import store from '@/store'
 
 Vue.use(Router)
@@ -29,6 +30,14 @@ const router = new Router({
     path: '/users',
     name: 'Users',
     component: Users,
+    meta: {
+      authRequired: true
+    }
+  },
+  {
+    path: '/user/changepassword',
+    name: 'ChangePassword',
+    component: ChangePassword,
     meta: {
       authRequired: true
     }

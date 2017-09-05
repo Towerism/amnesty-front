@@ -8,6 +8,7 @@
           b-nav-item(to="/users" v-if="loggedIn") Users
         b-nav(is-nav-bar).ml-auto
           b-nav-item-dropdown(v-if="loggedIn" :text="userFullname" right)
+            b-dropdown-item(to="/user/changepassword") Change Password
             b-dropdown-item(@click="logout") Logout
           b-nav-item(v-else to="/login" right) Login
 </template>
