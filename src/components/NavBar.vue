@@ -5,7 +5,7 @@
         b-navbar-brand(to="/") Amnesty
         b-nav(is-nav-bar)
           b-nav-item(to="/home") Home
-          b-nav-item(to="/users/new") New User
+          b-nav-item(to="/users" v-if="loggedIn") Users
         b-nav(is-nav-bar).ml-auto
           b-nav-item-dropdown(v-if="loggedIn" :text="userFullname" right)
             b-dropdown-item(@click="logout") Logout

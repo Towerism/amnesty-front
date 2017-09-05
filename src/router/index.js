@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
-import NewUser from '@/components/NewUser'
+import Users from '@/components/Users'
 import store from '@/store'
 
 Vue.use(Router)
@@ -26,9 +26,9 @@ const router = new Router({
     component: Login
   },
   {
-    path: '/users/new',
-    name: 'NewUser',
-    component: NewUser,
+    path: '/users',
+    name: 'Users',
+    component: Users,
     meta: {
       authRequired: true
     }

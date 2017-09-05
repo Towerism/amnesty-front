@@ -30,16 +30,19 @@
         })
       },
       setUpProgressFinish () {
-        http.interceptors.response.use(response => {
-          this.requestsInProgress--
-          if (this.requestsInProgress === 0) {
-            this.$Progress.finish()
-          }
-          return response
-        }, error => {
-          this.$Progress.fail()
-          return Promise.reject(error)
-        })
+        http.interceptors.response.use(this.requestSucceeded, this.requestFailed)
+      },
+      requestSucceeded(response) {
+        this.requestsInProgress--
+        if (this.requestsInProgress === 0) {
+          this.$Progress.finish()
+        }
+        return response
+      },
+      requestFailed(error) {
+        this.requestsInProgress--
+        this.$Progress.fail()
+        return Promise.reject(error)
       }
     }
   }

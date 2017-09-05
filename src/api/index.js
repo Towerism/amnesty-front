@@ -11,5 +11,9 @@ export default {
 
   get(path) {
     return http.get(path)
+  },
+
+  delete(path) {
+    return http.delete(path)
   }
 }
